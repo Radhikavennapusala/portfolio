@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analytics with Tableau | Project Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .project-details {
+            max-width: 900px;
+            margin: 120px auto;
+        }
+        .detail-card {
+            padding: 4rem;
+        }
+        .detail-title {
+            color: var(--accent-color);
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-weight: 800;
+        }
+        .detail-section {
+            margin-bottom: 3rem;
+        }
+        .detail-subtitle {
+            color: var(--accent-color);
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .detail-text {
+            color: var(--text-color);
+            font-size: 1.15rem;
+            line-height: 1.8;
+        }
+        .module-list {
+            list-style: none;
+            padding: 0;
+        }
+        .module-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            padding: 1rem 1.5rem;
+            margin-bottom: 0.75rem;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: var(--transition);
+        }
+        .module-item:hover {
+            border-color: var(--accent-color);
+            background: rgba(139, 92, 246, 0.05);
+            transform: translateX(10px);
+        }
+        .module-item::before {
+            content: "✦";
+            color: var(--accent-color);
+        }
+        .back-btn {
+            margin-bottom: 2rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        .back-btn:hover {
+            color: var(--accent-color);
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container project-details animate-fade-in">
+        <a href="index.html" class="back-btn">← Back to Portfolio</a>
+        
+        <div class="detail-card">
+            <h1 class="detail-title">Data Analytics with Tableau</h1>
+            
+            <div class="detail-section">
+                <h2 class="detail-subtitle">Description</h2>
+                <p class="detail-text">
+                    Developed interactive dashboards using Tableau to analyze and visualize complex datasets in a clear and meaningful way. Collected data from Excel and SQL sources and performed data cleaning to ensure accuracy and consistency. Created charts, graphs, and KPI indicators to monitor trends and performance. Implemented filters and drill-down features to make dashboards dynamic and easy to explore. Delivered actionable insights to support data-driven decision-making.
+                </p>
+            </div>
+
+            <div class="detail-section">
+                <h2 class="detail-subtitle">Tools Used</h2>
+                <div class="skills-grid" style="justify-content: flex-start; margin: 0;">
+                    <div class="skill-badge">Tableau</div>
+                    <div class="skill-badge">Microsoft Excel</div>
+                    <div class="skill-badge">SQL</div>
+                </div>
+            </div>
+
+            <div class="detail-section">
+                <h2 class="detail-subtitle">Key Modules</h2>
+                <ul class="module-list">
+                    <li class="module-item">Data Collection (Excel/SQL data sources)</li>
+                    <li class="module-item">Data Cleaning & Preparation</li>
+                    <li class="module-item">Data Visualization (charts and dashboards)</li>
+                    <li class="module-item">KPI & Performance Analysis</li>
+                    <li class="module-item">Interactive Features (filters, drill-down)</li>
+                    <li class="module-item">Insights & Reporting</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
