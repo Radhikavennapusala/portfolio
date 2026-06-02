@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Resume Screening and Candidate Ranking System with Multiple Resumes Analysis and PDF Report Generator | Project Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .project-details {
+            max-width: 900px;
+            margin: 120px auto;
+        }
+        .detail-card {
+            padding: 4rem;
+        }
+        .detail-title {
+            color: var(--accent-color);
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-weight: 800;
+        }
+        .detail-section {
+            margin-bottom: 3rem;
+        }
+        .detail-subtitle {
+            color: var(--accent-color);
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .detail-text {
+            color: var(--text-color);
+            font-size: 1.15rem;
+            line-height: 1.8;
+        }
+        .module-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .module-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            padding: 1rem 1.5rem;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: var(--transition);
+        }
+        .module-item:hover {
+            border-color: var(--accent-color);
+            background: rgba(139, 92, 246, 0.05);
+            transform: translateX(10px);
+        }
+        .module-item::before {
+            content: "✦";
+            color: var(--accent-color);
+        }
+        .back-btn {
+            margin-bottom: 2rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        .back-btn:hover {
+            color: var(--accent-color);
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container project-details animate-fade-in">
+        <a href="index.html" class="back-btn">← Back to Portfolio</a>
+        
+        <div class="detail-card">
+            <h1 class="detail-title">AI-Powered Resume Screening and Candidate Ranking System with Multiple Resumes Analysis and PDF Report Generator</h1>
+            
+            <div class="detail-section">
+                <h2 class="detail-subtitle">Description</h2>
+                <p class="detail-text">
+                    Developed an intelligent recruitment system that automates resume screening using Artificial Intelligence and Natural Language Processing. The system analyzes multiple resumes and extracts key details like skills, education, and experience. It compares candidate profiles with job descriptions using techniques like TF-IDF and cosine similarity to generate match scores. Based on these scores, candidates are ranked automatically to help recruiters identify the best fit. The system also generates detailed PDF reports and provides a dashboard for easy analysis and decision-making.
+                </p>
+            </div>
+
+            <div class="detail-section">
+                <h2 class="detail-subtitle">Tools / Technologies</h2>
+                <div class="skills-grid" style="justify-content: flex-start; margin: 0;">
+                    <div class="skill-badge">Python</div>
+                    <div class="skill-badge">NLTK (NLP)</div>
+                    <div class="skill-badge">Random Forest</div>
+                    <div class="skill-badge">Pandas</div>
+                    <div class="skill-badge">SQLAlchemy</div>
+                    <div class="skill-badge">Flask</div>
+                    <div class="skill-badge">PyPDF</div>
+                </div>
+            </div>
+
+            <div class="detail-section">
+                <h2 class="detail-subtitle">Project Modules</h2>
+                <ul class="module-list">
+                    <li class="module-item">Login & Authentication Module</li>
+                    <li class="module-item">Resume Upload & Management</li>
+                    <li class="module-item">Data Processing & NLP Module</li>
+                    <li class="module-item">Feature Extraction (Skills, etc.)</li>
+                    <li class="module-item">Matching & Ranking (TF-IDF)</li>
+                    <li class="module-item">Dashboard & Visualization</li>
+                    <li class="module-item">PDF Report Generation</li>
+                    <li class="module-item">Admin Management Module</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
